@@ -1,0 +1,21 @@
+{
+	"manifest_version": 1,
+	"name": "AssToButt",
+	"version": 1.0,
+
+	"description": "Changes all instances of the string 'ass' to 'butt'",
+
+	"applications": {
+		"gecko": {
+			"id": "asstobutt",
+			"strict_min_version": "45.0"
+		}
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["*"], 
+			"js": ["asstobutt.js"]
+		}
+	]
+}
