@@ -1,4 +1,4 @@
-function newTheOlds(node) {
+function assToButt(node) {
     node = node || document.body;
     if(node.nodeType == 3) {
         // Text node
@@ -9,8 +9,8 @@ function newTheOlds(node) {
         var nodes = node.childNodes;
         if(nodes) {
             var i = nodes.length;
-            while(i--) newTheOlds(nodes[i]);
+            while(i--) assToButt(nodes[i]);
         }
     }
 }
-document.addEventListener("DOMContentLoaded", newTheOlds()); 
+document.addEventListener("DOMContentLoaded", assToButt()); 
