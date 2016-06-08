@@ -1,0 +1,22 @@
+{
+
+  "description": "Changes all isntances of the string ass to butt",
+  "manifest_version": 2,
+  "name": "AssToButt",
+  "version": "1.0",
+  "homepage_url": "https://github.com/eldhom/AssToButt",
+  "applications": {
+    "gecko": {
+      "id": "asstobutt@albinvass.org",
+      "strict_min_version": "45.0"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["asstobutt.js"]
+    }
+  ]
+
+}
