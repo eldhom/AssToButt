@@ -1,4 +1,4 @@
-# AssToButt
+# RegexReplace
 
 
-Changes all instances of the strings ass to butt
+Modifies all instances of a regex match
