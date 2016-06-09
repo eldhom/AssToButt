@@ -1,13 +1,13 @@
 {
 
-  "description": "Changes all isntances of the string ass to butt",
+  "description": "Changes all instances or a regex match to a specified string",
   "manifest_version": 2,
-  "name": "AssToButt",
+  "name": "RegexReplace",
   "version": "1.0",
-  "homepage_url": "https://github.com/eldhom/AssToButt",
+  "homepage_url": "https://github.com/eldhom/RegexReplace",
   "applications": {
     "gecko": {
-      "id": "asstobutt@albinvass.org",
+      "id": "regexreplace@albinvass.org",
       "strict_min_version": "45.0"
     }
   },
@@ -15,7 +15,7 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["asstobutt.js"]
+      "js": ["RegexReplace.js"]
     }
   ]
 
